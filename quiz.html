@@ -5,44 +5,64 @@
     </head>
     <body>
         <div id="questions">
+
             <form id="question_1">
-                <h4></h4>
-                <br>
                 <label>1: Webpages are made with what language?</label><br>
-                <select name="question_1s">
-                    <option value="Python">Python</option>
-                    <option value="Ruby">Ruby</option>
-                    <option value="HTML">HTML</option>
-                    <option value="C#">C++</option>
-                </select>
-                <button type="submit" id="submit_1">Submit Answer</button>
+                    <input type="radio" id="cplus" name="question1" value="C++">
+                    <label for="cplus">C++</label><br>
+                    <input type="radio" id="ruby" name="question1" value="Ruby">
+                    <label for="ruby">Ruby</label><br>
+                    <input type="radio" id="python" name="question1" value="Python">
+                    <label for="python">Python</label><br>
+                    <input type="radio" id="html" name="question1" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="submit" value="Submit Answer" onClick="question1">
             </form>
 
             <form id="question_2">
-                <h4></h4>
-                <br>
                 <label>2: Which programming language is used to animate and modify HTML webpages?</label><br>
-                <select name="question_2s">
-                    <option value="Python">JavaScript</option>
-                    <option value="Ruby">MaltaScript</option>
-                    <option value="HTML">Logic-ALL</option>
-                    <option value="C#">Pro-Gram</option>
-                </select>
-                <button type="submit" id="submit_1">Submit Answer</button>
+                    <input type="radio" id="javascript" name="question2" value="JavaScript">
+                    <label for="javascript">Javascript</label><br>
+                    <input type="radio" id="maltascript"  name="question2" value="MaltaScript">
+                    <label for="maltascript">MaltaScript</label><br>
+                    <input type="radio" id="cappuccinoscript" name="question2" value="CappuccinoScript">
+                    <label for="cappuccinoscript">CappuccinoScript</label><br>
+                    <input type="radio" id="logicall" name="question2" value="Logic-ALL">
+                    <label for="logicall">Logic-ALL</label><br>
+                    <input type="submit" value="Submit Answer">
             </form>
 
             <form id="question_3">
-                <h4></h4>
-                <br>
-                <label>1: Webpages are made with what language?</label><br>
-                <select name="question_3s">
-                    <option value="Python">Python</option>
-                    <option value="Ruby">Ruby</option>
-                    <option value="HTML">HTML</option>
-                    <option value="C#">C++</option>
-                </select>
-                <button type="submit" id="submit_1">Submit Answer</button>
+                <label>3: What is the first step for the TDD development scheme?</label><br>
+                    <input type="radio" value="a3">Create a test that fails.</option><br>
+                    <input type="radio" value="b3">Write the minimum code needed to make the test pass.</option><br>
+                    <input type="radio" value="c3">Write as much code as possible to make your test pass.</option><br>
+                <button type="submit" id="submit_3">Submit Answer</button><br>
             </form>
+
+            <form id="question_4">
+                <label>4: What is the second step for the TDD development scheme?</label><br>
+                    <input type="radio" value="a4">Create a test that fails.</option><br>
+                    <input type="radio" value="b4">Write the minimum code needed to make the test pass.</option><br>
+                    <input type="radio" value="c4">Write as much code as possible to make your test pass.</option><br>
+                <button type="submit" id="submit_4">Submit Answer</button><br>
+            </form>
+
+            <form id="question_5">
+                <label>5: Which of these is not associated with the Ruby programming language?</label><br>
+                    <input type="radio" value="a5">HTTParty</option><br>
+                    <input type="radio" value="b5">RSpec Testing</option><br>
+                    <input type="radio" value="c5">The Enumerable Module</option><br>
+                    <input type="radio" value="d5">Sloths API</option><br>
+                <button type="submit" id="submit_5">Submit Answer</button><br>
+            </form>
+
+            <form id="question_6">
+                <label>6: What is the shortcut for the descriptive git log tree output in the terminal?</label><br>
+                <input type="text" name="answer_6" value=""></option>
+                <button type="submit" id="submit_6" value="Click" onClick="question6">Submit Answer</button>
+            </form>
+
         </div>
         <script src="quiz_script.js"></script>
     </body>
