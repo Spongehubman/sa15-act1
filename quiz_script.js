@@ -8,6 +8,8 @@ document.getElementById("submit2").addEventListener("click", question2)
 document.getElementById("submit3").addEventListener("click", question3)
 document.getElementById("submit4").addEventListener("click", question4)
 document.getElementById("submit5").addEventListener("click", question5)
+document.getElementById("submit6").addEventListener("click", question6)
+document.getElementById("submit7").addEventListener("click", question7)
 
 function question1() {
     event.preventDefault()
@@ -58,6 +60,28 @@ function question4() {
 function question5() {
     event.preventDefault()
     var real_answer = document.getElementById("jaguar")
+
+    if (real_answer.checked == true) {
+        console.log("correct")
+    }   else    {
+        console.log("incorrect")
+    }
+}
+
+function question6() {
+    event.preventDefault()
+    var real_answer = document.getElementById("gloga")
+
+    if (real_answer.checked == true) {
+        console.log("correct")
+    }   else    {
+        console.log("incorrect")
+    }
+}
+
+function question7() {
+    event.preventDefault()
+    var real_answer = document.getElementById("staged")
 
     if (real_answer.checked == true) {
         console.log("correct")
