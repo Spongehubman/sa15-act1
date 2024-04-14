@@ -14,78 +14,114 @@ document.getElementById("submit7").addEventListener("click", question7)
 function question1() {
     event.preventDefault()
     var real_answer = document.getElementById("html")
+    const responseElement = document.createElement("p")
+
     //var c2 = document.getElementById("ruby")
     //c2.checked = true
 
     if (real_answer.checked == true) {
-        console.log("correct")
+        var result = `Correct!`
     }   else    {
-        console.log("incorrect")
+        var result = `Incorrect...`
     }
+
+    responseElement.innerText = result
+    const loc = document.getElementById("one_answer")
+    loc.insertAdjacentElement("afterend", responseElement)
 }
 
 function question2() {
     event.preventDefault()
     var real_answer = document.getElementById("javascript")
+    const responseElement = document.createElement("p")
 
     if (real_answer.checked == true) {
-        console.log("correct")
+        var result = `Correct!`
     }   else    {
-        console.log("incorrect")
+        var result = `Incorrect...`
     }
+
+    responseElement.innerText = result
+    const loc = document.getElementById("two_answer")
+    loc.insertAdjacentElement("afterend", responseElement)
 }
 
 function question3() {
     event.preventDefault()
     var real_answer = document.getElementById("failtest")
+    const responseElement = document.createElement("p")
 
     if (real_answer.checked == true) {
-        console.log("correct")
+        var result = `Correct!`
     }   else    {
-        console.log("incorrect")
+        var result = `Incorrect...`
     }
+
+    responseElement.innerText = result
+    const loc = document.getElementById("three_answer")
+    loc.insertAdjacentElement("afterend", responseElement)
 }
 
 function question4() {
     event.preventDefault()
     var real_answer = document.getElementById("minimum2")
+    const responseElement = document.createElement("p")
 
     if (real_answer.checked == true) {
-        console.log("correct")
+        var result = `Correct!`
     }   else    {
-        console.log("incorrect")
+        var result = `Incorrect...`
     }
+
+    responseElement.innerText = result
+    const loc = document.getElementById("four_answer")
+    loc.insertAdjacentElement("afterend", responseElement)
 }
 
 function question5() {
     event.preventDefault()
     var real_answer = document.getElementById("jaguar")
+    const responseElement = document.createElement("p")
 
     if (real_answer.checked == true) {
-        console.log("correct")
+        var result = `Correct!`
     }   else    {
-        console.log("incorrect")
+        var result = `Incorrect...`
     }
+
+    responseElement.innerText = result
+    const loc = document.getElementById("five_answer")
+    loc.insertAdjacentElement("afterend", responseElement)
 }
 
 function question6() {
     event.preventDefault()
     var real_answer = document.getElementById("gloga")
+    const responseElement = document.createElement("p")
 
     if (real_answer.checked == true) {
-        console.log("correct")
+        var result = `Correct!`
     }   else    {
-        console.log("incorrect")
+        var result = `Incorrect...`
     }
+
+    responseElement.innerText = result
+    const loc = document.getElementById("six_answer")
+    loc.insertAdjacentElement("afterend", responseElement)
 }
 
 function question7() {
     event.preventDefault()
     var real_answer = document.getElementById("staged")
+    const responseElement = document.createElement("p")
 
     if (real_answer.checked == true) {
-        console.log("correct")
+        var result = `Correct!`
     }   else    {
-        console.log("incorrect")
+        var result = `Incorrect...`
     }
+
+    responseElement.innerText = result
+    const loc = document.getElementById("seven_answer")
+    loc.insertAdjacentElement("afterend", responseElement)
 }
